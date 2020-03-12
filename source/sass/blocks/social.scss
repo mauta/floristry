@@ -1,0 +1,25 @@
+.social__list{
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    width:81%;
+    margin:0 auto;
+    padding:0;
+}
+
+.social__icon{
+    color: #fff;
+    background-color:transparent;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.social__link{
+    display: block;
+    background-color:$main-color;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+}

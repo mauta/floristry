@@ -1,10 +1,10 @@
 .body {
     background-color: $main-color;
     font-family: $main-font;
+    color: #fff;
     width: 320px;
     margin: 0 calc(50% - 160px);
     padding: 0;
-    border: 1px solid white;
 }
 
 .visually-hidden {
