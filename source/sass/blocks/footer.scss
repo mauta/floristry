@@ -1,0 +1,41 @@
+.footer {
+    padding: 35px 16px 28px;
+    position: relative;
+    
+
+    &::before {
+        display: block;
+        content: '';
+        width: 288px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #fff;
+        opacity: 0.5;
+        position: absolute;
+        top: 9px;
+        left: 16px;
+    }
+}
+
+.footer__list {
+    @include list;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.footer__link {
+    @include link;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.footer__social{
+    width: 288px;
+
+}
