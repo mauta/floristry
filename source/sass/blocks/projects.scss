@@ -1,23 +1,40 @@
-.projects__title{
+.projects__title {
     font-size: $biggest-title-mobile;
     text-transform: uppercase;
     font-weight: 400;
     text-align: center;
     width: 240px;
     margin: 0 auto 33px;
-    font-family: Playfair Display;
+    font-family: $main-font;
     line-height: 42px;
     letter-spacing: 1px;
 
+    @media (min-width: 768px) {
+        font-style: normal;
+        font-weight: 100;
+        font-size: 70px;
+        line-height: 77px;
+        letter-spacing: 0.09em;
+        width: 570px;
+        padding-top: 226px;
+        margin-bottom: 82px;
+
+    }
+
 }
 
-.projects{
-    background-image: url('../img/header_img_mobile.jpg');
+.projects {
+    background-image: url('../img/project_img_mobile.jpg');
     padding-top: 105px;
     padding-bottom: 89px;
+
+    @media (min-width: 768px) {
+        background-image: url('../img/project_img_tablet.jpg');
+        margin-top: -64px;
+    }
 }
 
-.projects__btn{
+.projects__btn {
     background-color: rgba($color: #000000, $alpha: 0.4);
     border: 1px solid #ffffff;
     color: rgba($color: #ffffff, $alpha: 0.6);
@@ -30,5 +47,14 @@
     padding-top: 19px;
     padding-bottom: 18px;
     width: 177px;
+
+    @media (min-width: 768px) {
+        width: 257px;
+        font-size: 15px;
+        line-height: 17px;
+        padding-top: 20px;
+        padding-bottom: 21px;
+        margin: 0 calc(50% - 128px) 257px;
+    }
 
 }

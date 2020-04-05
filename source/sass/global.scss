@@ -5,6 +5,11 @@
     width: 320px;
     margin: 0 calc(50% - 160px);
     padding: 0;
+
+    @media (min-width: 768px) {
+        width: 768px;
+        margin: 0 calc(50% - 384px);
+    }
 }
 
 .visually-hidden {
