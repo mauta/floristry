@@ -12,8 +12,8 @@
 @mixin list {
   list-style: none;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+
 }
 
 @mixin link {
@@ -22,6 +22,7 @@
 }
 
 @mixin title {
+  font-family: $main-font;
   font-weight: 400;
   margin: 0;
   font-size: 20px;
