@@ -31,6 +31,13 @@
   letter-spacing: 1px;
 }
 
+@mixin title-tablet{
+  font-size: 30px;
+  line-height: 33px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
 // @mixin title-big {
 //   font-size: 43px;
 //   font-weight: 700;
