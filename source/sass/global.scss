@@ -10,6 +10,11 @@
         width: 768px;
         margin: 0 calc(50% - 384px);
     }
+
+    @media (min-width: 1600px){
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .visually-hidden {
@@ -22,4 +27,4 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
+

@@ -34,6 +34,11 @@
         top: 14px;
         left: 15px;
     }
+    @media (min-width: 1600px){
+        width: 25px;
+        height: 25px;
+ 
+    }
 }
 
 .social__link{
@@ -47,6 +52,12 @@
     @media (min-width: 768px){
         width:55px;
         height: 55px;
+    }
+
+    @media (min-width: 1600px){
+        background-color: transparent;
+        width:49px;
+        height: 49px;
     }
 }
 
