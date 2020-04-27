@@ -24,22 +24,55 @@
         }
     }
 
+    @media (min-width: 1600px) {
+        margin-bottom: 121px;
+    }
+
 }
 
 .catalog {
-    margin-top: 99px;
+    padding-top: 99px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+
+    @media (min-width: 1600px) {
+        padding-top: 188px;
+        padding-left: 26px;
+
+        &::before {
+            content: 'Каталог услуг';
+            color: #fff;
+            opacity: 0.03;
+            font-size: 220px;
+            line-height: 243px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            position: absolute;
+            left: 131px;
+            top: 207px;
+            z-index: 0;
+        }
+
+    }
 }
 
 .catalog__list {
     @include list;
     display: flex;
+    position: relative;
+    z-index: 1;
 
 
     @media (min-width: 768px) {
         justify-content: space-between;
         margin: 0 26px 10px 25px;
+    }
+
+    @media (min-width: 1600px) {
+        margin: 0 auto;
+        width: 1500px;
 
     }
 }
@@ -52,6 +85,9 @@
     text-transform: uppercase;
     margin-top: 278px;
     margin-left: 20px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.9;
 
     @media (min-width: 768px) {
         margin-top: 317px;
@@ -67,11 +103,16 @@
     padding-top: 23px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 
     @media (min-width: 768px) {
         padding-top: 42px;
         width: 330px;
         height: 450px;
+    }
+
+    @media (min-width: 1600px) {
+        margin: 0;
     }
 
 
@@ -96,11 +137,19 @@
     &-composition {
         background-image: url(../img/img_composition.jpg);
         display: none;
+
+        @media (min-width: 1600px) {
+            display: block;
+        }
     }
 
     &-events {
         background-image: url(../img/img_events.jpg);
         display: none;
+
+        @media (min-width: 1600px) {
+            display: block;
+        }
     }
 }
 
@@ -110,6 +159,7 @@
     line-height: 22px;
     padding-left: 100px;
     position: relative;
+    opacity: 0.9;
 
     &::before {
         display: block;
@@ -152,6 +202,10 @@
     width: 288px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 1600px) {
+        display: none;
+    }
 }
 
 .catalog__button {
