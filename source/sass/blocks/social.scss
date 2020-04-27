@@ -19,6 +19,15 @@
             margin-left: 0px;  
         }
     }
+
+    @media (min-width: 1600px){
+       
+        &--footer{
+            width:98%;
+            margin-left: 8px;
+            margin-top: -7px;
+        }
+    }
 }
 
 .social__icon{
@@ -60,4 +69,5 @@
         height: 49px;
     }
 }
+
 
