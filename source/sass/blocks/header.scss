@@ -19,6 +19,7 @@
 }
 
 .header__menu {
+    @include hover;
     background-color: transparent;
     width: 37px;
     height: 37px;
@@ -69,6 +70,7 @@
 }
 
 .header__menu-text {
+    @include hover;
     display: none;
 
     @media (min-width: 1600px) {
@@ -86,6 +88,7 @@
 }
 
 .header__logo {
+    @include hover;
     @media (min-width: 768px) {
         width: 155px;
     }

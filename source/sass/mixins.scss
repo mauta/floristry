@@ -38,6 +38,50 @@
   text-align: center;
 }
 
+@mixin button-hover-dst{
+  &:hover,
+  &:focus,
+  &:active{
+    background-color:#FFFFFF;
+    color: #000000;
+  }
+}
+
+@mixin button-hover{
+  &:hover,
+  &:focus,
+  &:active{
+    background-color:#3B181E;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    cursor: pointer;  
+  }
+}
+
+@mixin hover {
+  &:focus,
+  &:active,
+  &:hover{
+    opacity: 1;
+    outline: none;
+    cursor: pointer;
+  }  
+}
+
+@mixin button-focus-dst{
+  &:focus,
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+@mixin button-focus{
+  &:focus,
+  &:active{
+    opacity: 0.6; 
+  }
+}
+
 // @mixin title-big {
 //   font-size: 43px;
 //   font-weight: 700;

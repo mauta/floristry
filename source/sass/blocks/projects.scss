@@ -53,6 +53,7 @@
 }
 
 .projects__link-catalog {
+    @include hover;
   display: none;
 
     @media (min-width: 1600px) {
@@ -66,6 +67,7 @@
         line-height: 22px;
         letter-spacing: 0.06em;     
         transform: rotate(90deg) translateX(-58px);
+        opacity: 0.6;
     }   
 
 
@@ -75,6 +77,9 @@
 }
 
 .projects__btn {
+    @include button-hover;
+    @include button-focus;
+    outline: none;
     background-color: rgba($color: #000000, $alpha: 0.4);
     border: 1px solid #ffffff;
     color: rgba($color: #ffffff, $alpha: 0.6);
@@ -98,6 +103,8 @@
     }
 
     @media (min-width: 1600px) {
+        @include button-hover-dst;
+        @include button-focus-dst;
         width: 199px;
         margin: 0 calc(50% - 91px) 211px;
         font-size: 12px;
@@ -120,6 +127,7 @@
 }
 
 .social__list-project{
+    @include hover;
     @media (min-width: 1600px) {
         display: flex;
         flex-direction: column;

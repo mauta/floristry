@@ -51,6 +51,7 @@
 }
 
 .social__link{
+    @include hover;
     display: block;
     background-color:$main-color;
     width: 35px;

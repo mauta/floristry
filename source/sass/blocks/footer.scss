@@ -48,6 +48,7 @@
 }
 
 .footer__link {
+    @include hover;
     @include link;
     font-family: $main-font;
     font-style: normal;
