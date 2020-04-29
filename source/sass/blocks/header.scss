@@ -4,7 +4,7 @@
     align-items: start;
     justify-content: space-between;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 
     @media (min-width: 768px) {
         margin: 0 50px;
@@ -24,6 +24,7 @@
     height: 37px;
     position: relative;
     border: none;
+    opacity: 0.6;
 
     &::after {
         display: block;
@@ -32,7 +33,7 @@
         height: 2px;
         background-color: #fff;
         position: absolute;
-        top: 0px;
+        top: 20px;
         left: 0;
     }
 
