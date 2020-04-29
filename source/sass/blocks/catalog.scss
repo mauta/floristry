@@ -83,6 +83,24 @@
 
 .catalog__link {
     @include link;
+    &:hover,
+    &:focus,
+    &:active {
+        outline: 1px solid rgba(255, 255, 255, 0.2);
+        outline-offset: 10px;
+        cursor: pointer;
+
+        .catalog__btn {
+            display: block;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .catalog__text {
+            margin-bottom: 90px;
+        }
+    }
 }
 
 .catalog__btn {
@@ -130,24 +148,7 @@
     margin-right: auto;
     position: relative;
 
-    // &:hover,
-    &:focus,
-    &:active {
-        outline: 1px solid rgba(255, 255, 255, 0.2);
-        outline-offset: 10px;
-        cursor: pointer;
 
-        .catalog__btn {
-            display: block;
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-        }
-
-        .catalog__text {
-            margin-bottom: 90px;
-        }
-    }
 
     @media (min-width: 768px) {
         padding-top: 42px;
@@ -204,7 +205,6 @@
     padding-left: 100px;
     position: relative;
     opacity: 0.9;
-    outline: none;
     margin: 0;
 
     &::before {
