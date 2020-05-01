@@ -1,0 +1,112 @@
+.call-me__form {
+  width: 288px;
+  height: 426px;
+  margin: 0 auto;
+  // временный цвет фона
+  // background-color: darkolivegreen;
+  padding-top: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.call-me__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin-bottom:47px;
+  margin-left: 25px;
+  width: 200px;
+}
+
+.call-me {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: calc(50% - 144px);
+
+}
+
+.call-me__input {
+  outline: none;
+  width: 248.86px;
+  height: 43.85px;
+  border: 1px solid rgba(246, 246, 249, 0.2);
+  box-sizing: border-box;
+  margin: 0 auto 16.45px;
+  background-color: transparent;
+  padding-left: 20px;
+
+  @include placeholder {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+    opacity: 0.6;
+  }
+}
+
+.call-me__btn {
+  @include button-white-hover;
+  background: #FFFFFF;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  padding: 16px 72px 15px 73px;
+  outline: none;
+  margin-top: 11px;
+  margin-left: -1px;
+}
+
+.call-me__close{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+
+  &::before{
+    content: '';
+    width: 29px;
+    height: 1px;
+    background-color: rgba(246, 246, 249, 0.6);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    left: -3px;
+
+  }
+  &::after{
+    content: '';
+    width: 29px;
+    height: 1px;
+    background-color: rgba(246, 246, 249, 0.6);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: -3px;
+
+  }
+
+}
