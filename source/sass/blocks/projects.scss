@@ -57,12 +57,9 @@
   display: none;
 
     @media (min-width: 1600px) {
+        @include font;
         display: inline-flex;
         text-decoration: none;
-        color: #FFFFFF;
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: normal;
         font-size: 20px;
         line-height: 22px;
         letter-spacing: 0.06em;     
@@ -82,11 +79,10 @@
     outline: none;
     background-color: rgba($color: #000000, $alpha: 0.4);
     border: 1px solid #ffffff;
-    color: rgba($color: #ffffff, $alpha: 0.6);
+    @include font;
+    opacity: 0.6;
     text-transform: uppercase;
     font-size: 10px;
-    font-weight: 400;
-    font-family: $main-font;
     letter-spacing: 0.15em;
     margin: 0 calc(50% - 88px) 70px;
     padding-top: 19px;

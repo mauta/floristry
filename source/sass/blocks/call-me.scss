@@ -23,15 +23,12 @@
 }
 
 .call-me__title {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
+  @include font;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #FFFFFF;
   opacity: 0.6;
   margin-bottom: 47px;
   margin-left: 25px;
@@ -50,10 +47,9 @@
 }
 
 .call-me {
-  // временный цвет фона
   width: 288px;
   height: 426px;
-  background-color: darkolivegreen;
+  background-color: $main-color;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -88,13 +84,10 @@
   padding-left: 20px;
 
   @include placeholder {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
+    @include font;
     font-size: 14px;
     line-height: 15px;
     letter-spacing: -0.01em;
-    color: #FFFFFF;
     opacity: 0.6;
 
     @media (min-width: 768px) and (max-width: 1600px) {
@@ -115,9 +108,7 @@
 .call-me__btn {
   @include button-white-hover;
   background: #FFFFFF;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
+  @include font;
   font-size: 12px;
   line-height: 13px;
   text-align: center;

@@ -21,6 +21,13 @@
   color: #FFFFFF;
 }
 
+@mixin font {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+
 @mixin title {
   font-family: $main-font;
   font-weight: 400;

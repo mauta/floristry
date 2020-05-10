@@ -71,18 +71,16 @@
 
 .header__menu-text {
     @include hover;
+    @include font;
     display: none;
 
     @media (min-width: 1600px) {
+        
         display: block;
-        font-family: $main-font;
-        font-style: normal;
-        font-weight: normal;
         font-size: 20px;
         line-height: 22px;
         text-align: right;
-        letter-spacing: 0.06em;
-        color: #FFFFFF;
+        letter-spacing: 0.06em;        
         text-transform: uppercase;
     }
 }

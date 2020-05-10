@@ -35,6 +35,7 @@
 
 .stock__title {
     @include title;
+    @include font;
     margin-bottom: 41px;
     width: 50%;
     position: relative;
@@ -78,9 +79,7 @@
 }
 
 .stock__text {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
+    @include font;
     font-size: 14px;
     line-height: 172%;
     margin-bottom: 40px;
@@ -105,17 +104,15 @@
 .stock__btn {
     @include button-hover;
     @include button-focus;
+    @include font;
     outline: none;
     background-color: rgba($color: #000000, $alpha: 1);
     border: 1px solid #000000;
-    color: rgba($color: #ffffff, $alpha: 0.6);
+    opacity: 0.6;
     text-transform: uppercase;
-    font-style: normal;
     font-size: 11px;
     line-height: 12px;
     letter-spacing: 0.15em;
-    font-weight: 400;
-    font-family: $main-font;
     padding-top: 17px;
     padding-bottom: 19px;
     padding-left: 10px;

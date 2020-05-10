@@ -12,13 +12,11 @@
 
   @media (min-width: 768px) {
     height: 1024px;
-    // left: calc(50% - 384px);
     padding-top: 111px;
   }
 
   @media (min-width: 1600px) {
     height: 1080px;
-    // left: calc(50% - 384px);
     padding-top: 93px;
   }
 }
@@ -107,14 +105,12 @@
 }
 
 .menu__title {
-  font-family: $main-font;
-  font-weight: normal;
+  @include font;
   font-size: 25px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 53px;
 
@@ -137,13 +133,12 @@
 
 .menu__link {
   @include link;
-  font-family: $main-font;
-  font-weight: normal;
+  @include font;
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
   margin: 0;
   padding: 0;
 
