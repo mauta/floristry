@@ -1,15 +1,26 @@
 .call-me__form {
-  width: 288px;
-  height: 426px;
   margin: 0 auto;
-  // временный цвет фона
-  // background-color: darkolivegreen;
   padding-top: 40px;
   padding-left: 20px;
   box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    padding-top: 74px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: 1600px) {
+    width: 381px;
+    height: 444px;
+    padding-top: 45px;
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
 }
-
-
 
 .call-me__title {
   font-family: $main-font;
@@ -22,16 +33,47 @@
   text-transform: uppercase;
   color: #FFFFFF;
   opacity: 0.6;
-  margin-bottom:47px;
+  margin-bottom: 47px;
   margin-left: 25px;
   width: 200px;
+
+  @media (min-width: 768px) and (max-width:1600px) {
+    width: 350px;
+    font-size: 30px;
+    line-height: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 71px;
+  }
+
+
 }
 
 .call-me {
+  // временный цвет фона
+  width: 288px;
+  height: 426px;
+  background-color: darkolivegreen;
   margin: 0;
   padding: 0;
   position: absolute;
   left: calc(50% - 144px);
+
+  @media (min-width: 768px) {
+    width: 464px;
+    height: 640px;
+    left: calc(50% - 232px);
+  }
+
+  @media (min-width: 1600px) {
+    width: 716px;
+    height: 444px;
+    left: calc(50% - 368px);
+    background-image: url(../img/pop-up.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+  }
 
 }
 
@@ -52,10 +94,22 @@
     font-size: 14px;
     line-height: 15px;
     letter-spacing: -0.01em;
-
     color: #FFFFFF;
     opacity: 0.6;
+
+    @media (min-width: 768px) and (max-width: 1600px) {
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
+
+  @media (min-width: 768px) and (max-width: 1600px) {
+    width: 374.87px;
+    height: 65.88px;
+    margin-bottom: 24.71px;
+    padding-left: 32px;
+  }
+
 }
 
 .call-me__btn {
@@ -75,9 +129,17 @@
   outline: none;
   margin-top: 11px;
   margin-left: -1px;
+
+  @media (min-width: 768px) and (max-width:1600px) {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.15em;
+    padding: 24px 118px 25px 116px;
+  }
 }
 
-.call-me__close{
+.call-me__close {
   width: 22px;
   height: 22px;
   position: absolute;
@@ -86,7 +148,7 @@
   background-color: transparent;
   border: none;
 
-  &::before{
+  &::before {
     content: '';
     width: 29px;
     height: 1px;
@@ -95,9 +157,9 @@
     position: absolute;
     top: 10px;
     left: -3px;
-
   }
-  &::after{
+
+  &::after {
     content: '';
     width: 29px;
     height: 1px;
@@ -106,7 +168,16 @@
     position: absolute;
     top: 10px;
     left: -3px;
+  }
 
+  @media (min-width: 768px) {
+    top: 40px;
+    right: 40px;
+  }
+
+  @media (min-width: 1600px) {
+    top: 22.5px;
+    right: 24.5px;
   }
 
 }
